@@ -1,10 +1,10 @@
 const express = require("express");
 const app = express();
-const { PORT = 3001 } = process.env;
+const { PORT = 4000 } = process.env;
 
 console.log("PORT" + PORT);
 
-app.get("/", (req, res) => res.send("Hellow this is Node! Update-1"));
+app.get("/", (req, res) => res.send("Hellow this is Node! Update-2"));
 
 app.listen(PORT, () =>
   console.log(

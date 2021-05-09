@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "database_development",
-    "host": "127.0.0.1",
+    "username": "admin",
+    "password": "adminintek",
+    "database": "koempro_server",
+    "host": "koempro-server.cwsly2cix1oo.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   },
   "test": {
