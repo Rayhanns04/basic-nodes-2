@@ -4,7 +4,7 @@ const { PORT = 3001 } = process.env;
 
 console.log("PORT" + PORT);
 
-app.get("/", (req, res) => res.send("Hellow this is Node!"));
+app.get("/", (req, res) => res.send("Hellow this is Node! Update-1"));
 
 app.listen(PORT, () =>
   console.log(
