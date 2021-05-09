@@ -14,7 +14,11 @@ app.use(cors());
 
 console.log("PORT" + PORT);
 
-app.get("/", (req, res) => res.send("Hellow this is Node! Update-3"));
+app.get("/", (req, res) => res.send("Hellow this is Node! Update-4"));
+
+app.use("/posts", require("./routes/Posts"));
+app.use("/auth", require("./routes/Users"));
+app.use("/members", require("./routes/Members"));
 
 app.listen(PORT, () =>
   console.log(
