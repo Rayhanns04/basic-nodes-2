@@ -20,8 +20,10 @@ app.use("/posts", require("./routes/Posts"));
 app.use("/auth", require("./routes/Users"));
 app.use("/members", require("./routes/Members"));
 
-app.listen(PORT, () =>
-  console.log(
-    `Really basic nodes with app listening at http://locahost:${PORT}`
-  )
-);
+db.sequelize.sync().then(() => {
+  aapp.listen(PORT, () =>
+    console.log(
+      `Really basic nodes with app listening at http://locahost:${PORT}`
+    )
+  );
+});
